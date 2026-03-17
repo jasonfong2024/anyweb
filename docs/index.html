@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CWiki 知识库管理平台产品介绍</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#overview">
+          <span class="brand-mark" aria-hidden="true">
+            <i></i>
+            <i></i>
+          </span>
+          <span class="brand-name">CWiki 产品介绍</span>
+        </a>
+        <nav class="topnav">
+          <a href="#overview">一页概述</a>
+          <a href="#architecture">功能架构</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-section panel" id="overview">
+          <div class="section-head">
+            <div class="title-row">
+              <span class="title-prefix">CWiki:</span>
+              <h1>国产自研知识库管理平台</h1>
+            </div>
+            <div class="logo-ghost">嘉为蓝鲸</div>
+          </div>
+
+          <div class="overview-grid" id="overview-grid"></div>
+        </section>
+
+        <section class="arch-section panel" id="architecture">
+          <div class="section-head">
+            <div class="title-row">
+              <span class="title-prefix">CWiki:</span>
+              <h2>产品功能架构</h2>
+            </div>
+            <div class="logo-ghost">嘉为蓝鲸</div>
+          </div>
+
+          <div class="architecture-board">
+            <div class="board-main">
+              <div class="band scenario-band">
+                <div class="band-title">应用场景</div>
+                <div class="pill-row" id="scenario-pills"></div>
+              </div>
+
+              <div class="capability-area">
+                <div class="band-title capability-title">应用能力</div>
+                <div class="capability-grid" id="capability-grid"></div>
+              </div>
+
+              <div class="band foundation-band">
+                <div class="band-title">底层能力</div>
+                <div class="foundation-grid" id="foundation-pills"></div>
+              </div>
+            </div>
+
+            <aside class="integration-side">
+              <div class="band-title">开放和集成</div>
+              <div class="integration-pills" id="integration-pills"></div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
