@@ -14,7 +14,6 @@ const overviewCore = [
   { text: "知识社区", tone: "teal" },
   { text: "知识搜索", tone: "violet", main: true },
   { text: "协同共创", tone: "blue" },
-  { text: "知识问答", tone: "cyan" },
   { text: "DevOps\n融合", tone: "royal" },
 ];
 
@@ -52,14 +51,6 @@ const overviewValues = [
     title: "平滑迁移与持续建设",
     body: "支持 Markdown、Word 及旧系统数据迁移，帮助企业低成本完成知识库切换与演进。",
   },
-];
-
-const platformPills = [
-  "国产化适配",
-  "统一账户与权限体系",
-  "RBAC 细粒度授权",
-  "审计日志与安全管控",
-  "开放扩展与第三方集成",
 ];
 
 const scenarios = [
@@ -115,8 +106,6 @@ const capabilities = [
 
 const integrations = ["DevOps平台集成", "需求管理关联", "项目管理关联", "测试管理关联", "第三方系统对接", "OA系统对接", "开放扩展能力", "MCP智能体对接"];
 
-const foundations = ["国产化适配", "统一账户体系", "RBAC权限控制", "审计日志", "凭据管理", "IP白名单", "数据备份与恢复", "安全合规保障"];
-
 function createPill(text, className = "pill") {
   const pill = document.createElement("div");
   pill.className = className;
@@ -157,11 +146,6 @@ function renderOverviewValues() {
   });
 }
 
-function renderPlatformPills() {
-  const wrap = document.getElementById("platform-pills");
-  platformPills.forEach((item) => wrap.appendChild(createPill(item)));
-}
-
 function renderScenarios() {
   const wrap = document.getElementById("scenario-pills");
   scenarios.forEach((item) => wrap.appendChild(createPill(item)));
@@ -195,8 +179,6 @@ renderOverviewBase();
 renderOverviewCore();
 renderOverviewScenes();
 renderOverviewValues();
-renderPlatformPills();
 renderScenarios();
 renderCapabilities();
 renderSideData("integration-pills", integrations);
-renderSideData("foundation-pills", foundations);

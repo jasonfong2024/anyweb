@@ -333,8 +333,7 @@ a {
 
 .overview-side,
 .overview-center,
-.value-section,
-.overview-baseboard {
+.value-section {
   position: relative;
 }
 
@@ -346,8 +345,7 @@ a {
 }
 
 .overview-side h3,
-.value-title,
-.baseboard-title {
+.value-title {
   margin: 0 0 18px;
   color: var(--text);
   font-size: 22px;
@@ -445,12 +443,6 @@ a {
   right: 110px;
 }
 
-.hex-node:nth-child(6) {
-  top: 258px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .tone-indigo {
   background: linear-gradient(180deg, #3e64d6 0%, #2a48a8 100%);
 }
@@ -465,10 +457,6 @@ a {
 
 .tone-blue {
   background: linear-gradient(180deg, #6f9df8 0%, #5383ef 100%);
-}
-
-.tone-cyan {
-  background: linear-gradient(180deg, #30a3d8 0%, #1b82bf 100%);
 }
 
 .tone-royal {
@@ -516,20 +504,6 @@ a {
   line-height: 1.75;
 }
 
-.overview-baseboard {
-  padding: 22px 26px 24px;
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at center top, rgba(55, 129, 255, 0.18), transparent 46%),
-    linear-gradient(180deg, #edf6ff 0%, #f8fbff 100%);
-}
-
-.baseboard-pills {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
-}
-
 .architecture-board {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 270px;
@@ -566,18 +540,13 @@ a {
 }
 
 .pill-row,
-.integration-pills,
-.foundation-grid {
+.integration-pills {
   display: grid;
   gap: 16px;
 }
 
 .pill-row {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.foundation-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .integration-pills {
@@ -660,8 +629,7 @@ a {
   .hex-node:nth-child(2),
   .hex-node:nth-child(3),
   .hex-node:nth-child(4),
-  .hex-node:nth-child(5),
-  .hex-node:nth-child(6) {
+  .hex-node:nth-child(5) {
     left: 50%;
     right: auto;
     transform: translateX(-50%);
@@ -687,12 +655,7 @@ a {
     top: 464px;
   }
 
-  .hex-node:nth-child(6) {
-    top: 580px;
-  }
-
-  .value-grid,
-  .baseboard-pills {
+  .value-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -728,20 +691,17 @@ a {
 
   .capability-grid,
   .pill-row,
-  .foundation-grid,
   .integration-pills {
     grid-template-columns: 1fr;
   }
 
   .mini-pill-grid,
-  .value-grid,
-  .baseboard-pills {
+  .value-grid {
     grid-template-columns: 1fr;
   }
 
   .overview-side,
   .value-section,
-  .overview-baseboard,
   .band,
   .capability-area,
   .integration-side {
